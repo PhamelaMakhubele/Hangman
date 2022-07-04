@@ -1,0 +1,108 @@
+.game-header{
+    text-align: center;
+}
+.game-figure{
+    border: 1px solid;
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+.game-figure .Line{
+    width: 350px;
+    height: 4px;
+    background-color: black;
+}
+.game-figure #floor{
+    width: 350px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+}
+.game-figure #vertical-rod{
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+
+}
+.game-figure #horizontal-rod{
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    left: 200px;
+
+}
+.game-figure #rope{
+    width: 50px;
+    transform-origin: bottom right;
+    transform: rotate(90deg);
+    position: absolute;
+    top: 96px;
+    right: 50px;
+
+}
+
+.person{
+    position: absolute;
+    right: 20px;
+    top: 100px;
+}
+.person .person-head{
+    width: 50px;
+    height: 50px;
+    border: 4px solid;
+    border-radius: 50%;
+}
+#person-body{
+    transform: rotate(90deg);
+    transform-origin: center left;
+    position: absolute;
+    left: 30px;
+    bottom: 0;
+    width: 100px;
+}
+.hands-wrapper{
+    position: relative;
+    top: 30px;
+}
+.hands-wrapper .hand{
+    width: 30px;
+
+}
+.hands-wrapper #right-hand{
+    position: absolute;
+    right: 0;
+    transform: rotate(-30deg);
+    transform-origin: center left;
+}
+.hands-wrapper #left-hand{
+    position: absolute;
+    left: 0;
+    transform: rotate(30deg);
+    transform-origin: center right;
+
+}
+.legs-wrapper {
+    position: relative;
+    top: 95px;
+}
+.legs-wrapper .leg{
+    width: 30px;
+
+}
+.legs-wrapper #right-leg{
+    position: absolute;
+    right: 0;
+    transform: rotate(30deg);
+    transform-origin: center left;
+}
+.legs-wrapper #left-leg{
+    position: absolute;
+    left: 0;
+    transform: rotate(-30deg);
+    transform-origin: center right;
+
+}
